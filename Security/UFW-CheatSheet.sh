@@ -25,6 +25,10 @@ sudo ufw allow in on eth1 to any port 3306
 #Block Connections to a Network Interface
 sudo ufw deny in on eth0 from 15.15.15.51
 
+#Allow this ip to port 443
+sudo ufw allow proto tcp from 10.0.0.0/8 to 10.1.1.1.2 port 443
+ufw allow from 10.0.0.0/8 to 10.1.1.1
+
 
 #Block outgoing smtp:
 sudo ufw deny out 25
