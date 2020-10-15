@@ -1,6 +1,7 @@
 # Bash-Script-Collection
 Various bash scripts i find good to have
 
-Other resources
-Anti DDOS | Bash Script Project - https://github.com/anti-ddos/Anti-DDOS
-Awesome tmux-based terminal divider - https://github.com/greymd/tmux-xpanes
+## Shell script and resources
+- [Shellntel's scripts](https://github.com/Shellntel/scripts) - A collection of scripts from the security professionals at www.shellntel.com.
+- [Anti DDOS | Bash Script Project](https://github.com/anti-ddos/Anti-DDOS)
+
