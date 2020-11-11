@@ -50,6 +50,17 @@ ecdsa-sha2-nistp256 - Possible NSA backdoor
 ```
 
 MAC Algorithms
+Check only MAC algorithms
+```
+sshd -T | grep macs
+```
+
+Example output
+```
+macs umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+```
+
+Stay away from these:
 ```
 umac-64-etm@openssh.com   - WEAK: 64-bit UMAC is no longer considered secure enough. Recommended tag size should be at least 128 bits.
 hmac-sha1-etm@openssh.com - WEAK: SHA-1 is becoming deprecated - consider replacing with SHA-256 or SHA-512. 
@@ -59,8 +70,8 @@ hmac-sha1                 - WEAK: SHA-1 is becoming deprecated - consider replac
 
 edit: `nano /etc/ssh/sshd_config` to contain e.g.
 ```
-ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc
-macs hmac-sha1,umac-64@openssh.com,hmac-sha2-256,hmac-sha2-512
+ciphers chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+macs umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512
 ```
 
 Restart SSH service
