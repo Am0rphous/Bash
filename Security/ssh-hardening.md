@@ -1,7 +1,9 @@
 
 Check allowed ciphers, macs, and key algorithms
 
-``` sshd -T | grep "\(ciphers\|macs\|kexalgorithms\)" ```
+```
+sshd -T | grep "\(ciphers\|macs\|kexalgorithms\)"
+```
 
 Example output:
 
@@ -12,7 +14,9 @@ kexalgorithms curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,
 
 #Check only ciphers
 
-``` sshd -T | grep ciphers ```
+```
+sshd -T | grep ciphers
+```
 
 Secure ciphers
 ```
