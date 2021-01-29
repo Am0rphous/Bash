@@ -1,9 +1,8 @@
 # Bash
 
-Various bash scripts and resources i find good to have
-
 - [AMSITrigger](https://github.com/RythmStick/AMSITrigger) - The Hunt for Malicious Strings.
-- [Anti DDOS | Bash Script Project](https://github.com/anti-ddos/Anti-DDOS)
+- [Anti DDOS - Bash Script Project](https://github.com/anti-ddos/Anti-DDOS)
+- [Most Useful Bash Scripts for Linux System Administrator](https://www.techbrown.com/most-useful-bash-scripts-linux-system-administrator/)
 - [Nimx](https://github.com/yglukhov/nimx) - GUI library.
 - [Shellntel's scripts](https://github.com/Shellntel/scripts) - A collection of scripts from the security professionals at www.shellntel.com.
 
