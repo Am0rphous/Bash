@@ -1,6 +1,8 @@
 
 ## SSH Hardening
 
+- [OpenSSH](https://www.openssh.com)
+
 # Setup and install
 ````
 sudo apt-get install openssh-server         #installs ssh server
@@ -9,7 +11,6 @@ sudo systemctl enable sshd                  #enable the service
 sudo systemctl restart sshd                 #restarts the service
 sudo ufw allow ssh                          #open port 22 in firewall
 ````
-- [OpenSSH](https://www.openssh.com)
 
 #### Check allowed ciphers, macs, and key algorithms
 
