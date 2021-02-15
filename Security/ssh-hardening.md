@@ -1,6 +1,16 @@
 
 ## SSH Hardening
 
+# Setup and install
+````
+sudo apt-get install openssh-server         #installs ssh server
+sudo apt install fail2ban                   #software to limit brute froce authentication attempts
+sudo systemctl enable sshd                  #enable the service
+sudo systemctl restart sshd                 #restarts the service
+sudo ufw allow ssh                          #open port 22 in firewall
+````
+- [OpenSSH](https://www.openssh.com)
+
 #### Check allowed ciphers, macs, and key algorithms
 
 ```
