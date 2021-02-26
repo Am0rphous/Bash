@@ -13,11 +13,22 @@
   ````
   #this is a singel comment
   <#
-  multiple lines of comments
+  multiple
+  lines
+  of
+  comments
   <#
   ````
+  Nother way is using `Here Document`
+  ````
+  << Multiline_Comment
+  this is
+  also multiple
+  lines
+  Multiline_Comment
+  ````
   ### 2. Exit when somethings fails in the script
-  If a certain command fails it often affects the rest of the script. To make the script exit is a command fails, use one of these:
+  If a certain command fails it often affects the rest of the script. To make the script exit if a command fails, use one of these:
   ````
   set -o errexit      #option 1
   set -e              #option 2
