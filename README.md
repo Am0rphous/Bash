@@ -7,6 +7,7 @@
 - [Most Useful Bash Scripts for Linux System Administrator](https://www.techbrown.com/most-useful-bash-scripts-linux-system-administrator/)
 - [Nimx](https://github.com/yglukhov/nimx) - GUI library.
 - [Parsing data in bash](https://github.com/r00t-3xp10it/hacking-material-books/blob/master/bash/parsing_data_in_bash.md)
+- [pSpy](https://github.com/DominicBreuker/pspy) - Monitor linux processes without root permissions
 - [Shellntel's scripts](https://github.com/Shellntel/scripts) - A collection of scripts from the security professionals at www.shellntel.com.
 
 
