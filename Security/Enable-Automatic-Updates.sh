@@ -23,6 +23,9 @@ Unattended-Upgrade::Allowed-Origins {
         "${distro_id}:${distro_codename}-updates";
         "${distro_id}:${distro_codename}-proposed";
         "${distro_id}:${distro_codename}-backports";
+        
+        // The Onion Router
+        // "origin=TorProject";
 };
 
 // This option controls whether the development release of Ubuntu will be
