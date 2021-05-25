@@ -28,6 +28,9 @@ Unattended-Upgrade::Allowed-Origins {
         // "origin=TorProject";
 };
 
+Unattended-Upgrade::Package-Blacklist {
+};
+
 // This option controls whether the development release of Ubuntu will be
 // upgraded automatically. Valid values are "true", "false", and "auto".
 Unattended-Upgrade::DevRelease "auto";
