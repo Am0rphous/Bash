@@ -1,5 +1,6 @@
 #/bin/bash
 #https://github.com/Am0rphous/Bash/blob/master/Security/hash.sh
+# macOS
 
 #colors
 NORMAL=`echo "\033[m"`
@@ -29,3 +30,14 @@ printf "\n${BLUE}MD5 hash:    ${NORMAL}$md5Hash"
 printf "\n${BLUE}SHA256 hash: ${NORMAL}$sha256Hash"
 printf "\n${BLUE}SHA512 hash: ${NORMAL}$sha512Hash"
 printf "\n\n"
+
+#To make an alias in macOS do the following
+# 1. copy the file 'hash.sh' to '/usr/local/bin/'
+# 2. open zshell/bash profile with
+#    nano ~/.zshrc
+#    nano ~/.bash_profile
+# in bash: paste following "alias hash='bash /usr/local/bin/hash.sh'" without the double-brackets.
+# in zshell: paste following "alias hash='zsh /usr/local/bin/hash.sh'" without the double-brackets.
+# 3. refresh the environments by running:
+#    source ~/.bash_profile
+#    source ~/.zshrc
