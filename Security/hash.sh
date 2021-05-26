@@ -1,5 +1,6 @@
 #/bin/bash
-#
+#https://github.com/Am0rphous/Bash/blob/master/Security/hash.sh
+
 #colors
 NORMAL=`echo "\033[m"`
 BLUE=`echo "\033[36m"`
