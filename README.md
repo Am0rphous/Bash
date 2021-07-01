@@ -11,6 +11,8 @@
 - [Shellntel's scripts](https://github.com/Shellntel/scripts) - A collection of scripts from the security professionals at www.shellntel.com.
 
 Usefull
+- [bashell](https://gitlab.com/zoralab/BaSHELL) - A simple git repository framework for unit-testing your bash scripts, coded purely using BASH script too.
+- [bashell snap package](https://snapcraft.io/bashell)
 - [Lenny Face](https://www.lennyfacecopypaste.com/) - Useful symbols and icons you can use in your scripts.
 
 ## Writing effective bash scripts
