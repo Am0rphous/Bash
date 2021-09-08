@@ -3,6 +3,7 @@
 - [AMSITrigger](https://github.com/RythmStick/AMSITrigger) - The Hunt for Malicious Strings.
 - [Anti DDOS - Bash Script Project](https://github.com/anti-ddos/Anti-DDOS)
 - [Bash-guide](https://github.com/Idnan/bash-guide) - A guide to learn bash.
+- [bash-it](https://github.com/Bash-it/bash-it) - A community Bash framework.
 - [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner) - A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
 - [Dmatch](https://github.com/guelfoweb/dmatch) - a simple pattern matching implementation to get and organize the results of the dumps.
 - [Most Useful Bash Scripts for Linux System Administrator](https://www.techbrown.com/most-useful-bash-scripts-linux-system-administrator/)
