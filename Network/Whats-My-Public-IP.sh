@@ -2,7 +2,6 @@
 
 curl ifconfig.me
 curl ipinfo.io/ip
-
 curl icanhazip.com
 
 wget http://ipecho.net/plain -O - -q ; echo
