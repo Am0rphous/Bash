@@ -1,12 +1,13 @@
 #!/bin/bash
-
 #source and inspo: https://brainfood.xyz/post/20191116-setup-gitlab-runner-with-docker-in-docker/
 
-# Install Unattended-Upgrades package
-sudo apt update && sudo apt install unattended-upgrades
+# Install packages
+sudo apt update && sudo apt install unattended-upgrades update-notifier-common
 
-# Configure Unattended Upgrades
-cat << EOF | sudo tee /etc/apt/apt.conf.d/50unattended-upgrades
+# Configuring
+sudo dpkg-reconfigure unattended-upgrades
+
+sudo cat << EOF > /etc/apt/apt.conf.d/50unattended-upgrades
 // documentation: https://wiki.debian.org/UnattendedUpgrades
 
 // Automatically upgrade packages from these (origin:archive) pairs
@@ -16,16 +17,17 @@ cat << EOF | sudo tee /etc/apt/apt.conf.d/50unattended-upgrades
 // pocket these get automatically pulled in.
 // Enable Upgrade for all package types
 Unattended-Upgrade::Allowed-Origins {
-        "${distro_id}:${distro_codename}";
-        "${distro_id}:${distro_codename}-security";
-        "${distro_id}ESM:${distro_codename}";
-        "${distro_id}ESM:${distro_codename}-infra-security";
-        "${distro_id}:${distro_codename}-updates";
-        "${distro_id}:${distro_codename}-proposed";
-        "${distro_id}:${distro_codename}-backports";
-        
-        // The Onion Router
-        // "origin=TorProject";
+       "${distro_id}:${distro_codename}";
+       "${distro_id}:${distro_codename}-security";
+       // Extended Security Maintenance; doesn't necessarily exist for
+       // every release and this system may not have it installed, but if
+       // available, the policy for updates is such that unattended-upgrades
+       // should also install from here by default.
+       "${distro_id}ESMApps:${distro_codename}-apps-security";
+       "${distro_id}ESM:${distro_codename}-infra-security";
+       "${distro_id}:${distro_codename}-updates";
+       "${distro_id}:${distro_codename}-proposed";
+       "${distro_id}:${distro_codename}-backports";
 };
 
 Unattended-Upgrade::Package-Blacklist {
@@ -89,7 +91,7 @@ Unattended-Upgrade::Automatic-Reboot-WithUsers "false";
 // If automatic reboot is enabled and needed, reboot at the specific
 // time instead of immediately
 //  Default: "now"
-Unattended-Upgrade::Automatic-Reboot-Time "06:00";
+Unattended-Upgrade::Automatic-Reboot-Time "05:00";
 
 // Use apt bandwidth limit feature, this example limits the download
 // speed to 70kb/sec
@@ -120,17 +122,19 @@ Unattended-Upgrade::Debug "true";
 // Unattended-Upgrade::Allow-downgrade "false";
 EOF
 
-# Enable Unattended Upgrades
-cat << EOF | sudo tee /etc/apt/apt.conf.d/20auto-upgrades
+
+
+#enable Unattended Upgrades
+cat << EOF > /etc/apt/apt.conf.d/20auto-upgrades
 // Enable the update/upgrade script (0=disable)
 APT::Periodic::Enable "1";
-
 // Do "apt-get update" automatically every n-days (0=disable)
 APT::Periodic::Update-Package-Lists "1";
-
 APT::Periodic::Unattended-Upgrade "1";
 APT::Periodic::Download-Upgradeable-Packages "1";
 APT::Periodic::AutocleanInterval "7";
 EOF
 
 printf "Following content is in the file '/etc/apt/apt.conf.d/20auto-upgrades': \n\n" && cat /etc/apt/apt.conf.d/20auto-upgrades
+printf "I am done.."
+printf ""
