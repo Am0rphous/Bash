@@ -128,12 +128,15 @@ EOF
 cat << EOF > /etc/apt/apt.conf.d/20auto-upgrades
 // Enable the update/upgrade script (0=disable)
 APT::Periodic::Enable "1";
+
 // Do "apt-get update" automatically every n-days (0=disable)
 APT::Periodic::Update-Package-Lists "1";
 APT::Periodic::Unattended-Upgrade "1";
 APT::Periodic::Download-Upgradeable-Packages "1";
 APT::Periodic::AutocleanInterval "7";
 EOF
+
+sudo service unattended-upgrades restart
 
 printf "\nFollowing content is in the file '/etc/apt/apt.conf.d/20auto-upgrades': \n\n" && cat /etc/apt/apt.conf.d/20auto-upgrades
 printf "\nI am done..\n"
