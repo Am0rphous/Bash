@@ -141,3 +141,10 @@ sudo service unattended-upgrades restart
 printf "\nFollowing content is in the file '/etc/apt/apt.conf.d/20auto-upgrades': \n\n" && cat /etc/apt/apt.conf.d/20auto-upgrades
 printf "\nI am done..\n"
 
+echo ""
+read -p "Do you want to test the configuration? y/n" anwser
+if [ "$anwser" = y ]
+then
+  sudo unattended-upgrade -d -v
+fi
+
