@@ -135,6 +135,6 @@ APT::Periodic::Download-Upgradeable-Packages "1";
 APT::Periodic::AutocleanInterval "7";
 EOF
 
-printf "Following content is in the file '/etc/apt/apt.conf.d/20auto-upgrades': \n\n" && cat /etc/apt/apt.conf.d/20auto-upgrades
-printf "I am done.."
-printf ""
+printf "\nFollowing content is in the file '/etc/apt/apt.conf.d/20auto-upgrades': \n\n" && cat /etc/apt/apt.conf.d/20auto-upgrades
+printf "\nI am done..\n"
+
