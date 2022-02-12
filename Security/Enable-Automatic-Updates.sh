@@ -8,7 +8,7 @@ sudo apt update && sudo apt install unattended-upgrades update-notifier-common
 # Configuring
 sudo dpkg-reconfigure unattended-upgrades
 
-sudo cat << EOF > /etc/apt/apt.conf.d/50unattended-upgrades
+sudo cat <<'EOF' > /etc/apt/apt.conf.d/50unattended-upgrades
 // documentation: https://wiki.debian.org/UnattendedUpgrades
 
 // Automatically upgrade packages from these (origin:archive) pairs
@@ -126,7 +126,7 @@ EOF
 
 
 #enable Unattended Upgrades
-cat << EOF > /etc/apt/apt.conf.d/20auto-upgrades
+sudo cat <<'EOF' > /etc/apt/apt.conf.d/20auto-upgrades
 // Enable the update/upgrade script (0=disable)
 APT::Periodic::Enable "1";
 
