@@ -7,6 +7,7 @@
 - [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner) - A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
 - [Dmatch](https://github.com/guelfoweb/dmatch) - a simple pattern matching implementation to get and organize the results of the dumps.
 - [ExplainShell.com](https://explainshell.com)
+- [Extracter](https://github.com/rootkit-io/Extracter) - This is a simple script that can extract any kind of archive.
 - [Most Useful Bash Scripts for Linux System Administrator](https://www.techbrown.com/most-useful-bash-scripts-linux-system-administrator/)
 - [Nimx](https://github.com/yglukhov/nimx) - GUI library.
 - [Parsing data in bash](https://github.com/r00t-3xp10it/hacking-material-books/blob/master/bash/parsing_data_in_bash.md)
