@@ -18,6 +18,8 @@ Usefull
 - [bashell](https://gitlab.com/zoralab/BaSHELL) - A simple git repository framework for unit-testing your bash scripts, coded purely using BASH script too.
 - [bashell snap package](https://snapcraft.io/bashell)
 - [Lenny Face](https://www.lennyfacecopypaste.com/) - Useful symbols and icons you can use in your scripts.
+- [shellcheck](https://github.com/koalaman/shellcheck) - ShellCheck, a static analysis tool for shell scripts
+
 
 ## Writing effective bash scripts
 - A script should be run without errors
