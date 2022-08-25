@@ -3,7 +3,7 @@
 #Inspo: https://brainfood.xyz/post/20191116-setup-gitlab-runner-with-docker-in-docker/
 
 # Install packages
-sudo apt update && sudo apt install unattended-upgrades update-notifier-common
+sudo apt update && sudo apt install unattended-upgrades
 
 # Configuring
 sudo dpkg-reconfigure unattended-upgrades
