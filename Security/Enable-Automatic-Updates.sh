@@ -147,5 +147,8 @@ read -p "Do you want to test the configuration? y/n " anwser
 if [ "$anwser" = y ]
 then
   sudo unattended-upgrade -d -v
+  sudo apt autoremove -y
+  sudo apt autoclean
+  printf "\nI am done..\n"
 fi
 
