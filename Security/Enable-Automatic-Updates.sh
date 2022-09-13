@@ -140,11 +140,9 @@ EOF
 sudo service unattended-upgrades restart
 
 printf "\nFollowing content is in the file '/etc/apt/apt.conf.d/20auto-upgrades': \n\n"
-tput setaf 3; cat /etc/apt/apt.conf.d/20auto-upgrades; tput setaf 7
+tput setaf 3; cat /etc/apt/apt.conf.d/20auto-upgrades; tput setaf 7;
 
-tput setaf 2
-printf "\nI am now done..\n"
-tput setaf 7
+tput setaf 2; printf "\nI am now done..\n"; tput setaf 7
 
 echo ""
 read -p "Do you want to test the configuration? y/n " anwser
