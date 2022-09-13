@@ -25,5 +25,6 @@ tput setaf 8; echo text ; tput setaf 9
 tput setaf 9; echo text ; tput setaf 9
 ````
 - Sometimes reset doesn't work. Use "7" in stead of "9" to reset.
-- Looks like: Ta da
+- Ta da
+
  ![text-color.png](pics/text-color.png?raw=true)
