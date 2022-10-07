@@ -18,17 +18,22 @@ sudo cat <<'EOF' > /etc/apt/apt.conf.d/50unattended-upgrades
 // pocket these get automatically pulled in.
 // Enable Upgrade for all package types
 Unattended-Upgrade::Allowed-Origins {
-       "${distro_id}:${distro_codename}";
-       "${distro_id}:${distro_codename}-security";
+       //"${distro_id}:${distro_codename}";
+       //"${distro_id}:${distro_codename}-security";
+       
        // Extended Security Maintenance; doesn't necessarily exist for
        // every release and this system may not have it installed, but if
        // available, the policy for updates is such that unattended-upgrades
        // should also install from here by default.
-       "${distro_id}ESMApps:${distro_codename}-apps-security";
-       "${distro_id}ESM:${distro_codename}-infra-security";
-       "${distro_id}:${distro_codename}-updates";
-       "${distro_id}:${distro_codename}-proposed";
-       "${distro_id}:${distro_codename}-backports";
+       
+       //"${distro_id}ESMApps:${distro_codename}-apps-security";
+       //"${distro_id}ESM:${distro_codename}-infra-security";
+       //"${distro_id}:${distro_codename}-updates";
+       //"${distro_id}:${distro_codename}-proposed";
+       //"${distro_id}:${distro_codename}-backports";
+       
+        //everything
+        "origin=*";
 };
 
 Unattended-Upgrade::Package-Blacklist {
