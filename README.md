@@ -27,6 +27,9 @@ Usefull
 - Program logic is clearly defined and apparent
 - A script does not do unnecessary work
 - Scripts should be reusable
+- Try using "set -x" which prints commands and their arguments as they are executed.
+
+
 ### 1. Comments
 Always use comments, so other people can easier understand your thinking, and the purpose of the script/commad.
 ````
@@ -46,18 +49,21 @@ also multiple
 lines
 Multiline_Comment
 ````
+
 ### 2. Exit when somethings fails in the script
 If a certain command fails it often affects the rest of the script. To make the script exit if a command fails, use one of these:
 ````
 set -o errexit      #option 1
 set -e              #option 2
 ````
+
 ### 3. Exit when an undeclared variable is used
 If an undeclared variable is used, it can result in logical error. Instruct bash to stop if an undeclared variable is trying to be used.
 ````
 set -o nounset     #option 1
 set -u             #option 2
 ````
+
 ### 4. When comparing strings use =
 == is synonym for =. Use single = when comparing a string
 ````
