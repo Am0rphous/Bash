@@ -21,7 +21,9 @@ do
         "Quit")
             break
             ;;
-        *) echo "invalid option $REPLY";;
+        *) echo "invalid option $REPLY"
+           exit 1
+           ;;
     esac
 done
 ````
