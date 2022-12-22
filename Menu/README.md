@@ -27,3 +27,36 @@ do
     esac
 done
 ````
+
+#### For later
+````
+# Create a variable to store the user's choice
+CHOICE=""
+
+# Create a loop to keep the menu open until the user exits
+while [ "$CHOICE" != "EXIT" ]
+do
+    # Create a GUI menu using the dialog command
+    CHOICE=$(dialog --title "Menu" --menu "Choose an option:" 15 60 4 \
+    1 "Option 1" \
+    2 "Option 2" \
+    3 "Option 3" \
+    EXIT "Exit" 3>&1 1>&2 2>&3)
+
+    # Take action based on the user's choice
+    case $CHOICE in
+        1)
+            echo "You chose Option 1"
+            ;;
+        2)
+            echo "You chose Option 2"
+            ;;
+        3)
+            echo "You chose Option 3"
+            ;;
+        EXIT)
+            echo "Exiting..."
+            ;;
+    esac
+done
+````
