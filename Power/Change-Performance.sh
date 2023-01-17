@@ -1,6 +1,7 @@
 #!/bin/bash
 # Am0rphous & ChatGPT 17.01.23
 
+#cpupower frequency-info –governors
 
 # Get the current governor mode
 CURRENT_GOVERNOR_MODE=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)
