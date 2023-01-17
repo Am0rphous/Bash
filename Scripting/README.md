@@ -4,9 +4,7 @@
 - _"It should perform the task for which it is intended"_
 - _"Program logic is clearly defined and apparent"_
 - _"A script does not do unnecessary work"_
-
-
-Scripts should be reusable
+- _"Scripts should be reusable"_
 
 ## Waiting for user input
 ````powershell
