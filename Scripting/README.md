@@ -13,7 +13,6 @@ read -p "Press [ENTER] when finished..."
 ````
 
 ## Redirecting output
-Code
 ````powershell
 sudo apt update > /dev/null 2>&1 
 
