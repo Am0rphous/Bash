@@ -1,5 +1,7 @@
 # Various menu styles
 
+Just lots of testing here. Please check out inspo: [Bash Select (Make Menus)](https://linuxize.com/post/bash-select/)
+
 #### Primitive
 ````
 #!/bin/bash
