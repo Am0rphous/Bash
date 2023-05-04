@@ -1,5 +1,7 @@
 # S c r i p t i n g
 
+- [Shell Scripting for Beginners – How to Write Bash Scripts in Linux](https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/)
+
 - _"A script should be run without errors"_
 - _"It should perform the task for which it is intended"_
 - _"Program logic is clearly defined and apparent"_
