@@ -1,10 +1,12 @@
 # Some variable checks
+
+- Make file empty `: > file`
+
 - [Source 1 - Bash Shell Find Out If a Variable Is Empty Or Not](https://www.cyberciti.biz/faq/unix-linux-bash-script-check-if-variable-is-empty)
 
 ### Is it empty?
 Various commands:
 ````
-
 [ -z "$var" ] && echo "Empty"                             #option 1
 [[ -z "$var" ]] && echo "Empty"                           #option 2
 [ ! -z "$var" ] || echo "Empty"                           #option 3
