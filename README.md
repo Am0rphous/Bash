@@ -1,24 +1,20 @@
 # Bash (work in progress)
 
-- [AMSITrigger](https://github.com/RythmStick/AMSITrigger) - The Hunt for Malicious Strings.
-- [Anti DDOS - Bash Script Project](https://github.com/anti-ddos/Anti-DDOS)
+
 - [Bash-guide](https://github.com/Idnan/bash-guide) - A guide to learn bash.
 - [bash-it](https://github.com/Bash-it/bash-it) - A community Bash framework.
 - [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner) - A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
+- [bashell](https://gitlab.com/zoralab/BaSHELL) - A simple git repository framework for unit-testing your bash scripts, coded purely using BASH script too.
+- [bashell snap package](https://snapcraft.io/bashell)
 - [Dmatch](https://github.com/guelfoweb/dmatch) - a simple pattern matching implementation to get and organize the results of the dumps.
 - [ExplainShell.com](https://explainshell.com)
 - [Extracter](https://github.com/rootkit-io/Extracter) - This is a simple script that can extract any kind of archive.
 - [Most Useful Bash Scripts for Linux System Administrator](https://www.techbrown.com/most-useful-bash-scripts-linux-system-administrator/)
-- [Nimx](https://github.com/yglukhov/nimx) - GUI library.
 - [Parsing data in bash](https://github.com/r00t-3xp10it/hacking-material-books/blob/master/bash/parsing_data_in_bash.md)
 - [pSpy](https://github.com/DominicBreuker/pspy) - Monitor linux processes without root permissions
-- [Shellntel's scripts](https://github.com/Shellntel/scripts) - A collection of scripts from the security professionals at www.shellntel.com.
-
-Usefull
-- [bashell](https://gitlab.com/zoralab/BaSHELL) - A simple git repository framework for unit-testing your bash scripts, coded purely using BASH script too.
-- [bashell snap package](https://snapcraft.io/bashell)
-- [Lenny Face](https://www.lennyfacecopypaste.com/) - Useful symbols and icons you can use in your scripts.
+- [Shell Scripting for Beginners – How to Write Bash Scripts in Linux](https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/)
 - [shellcheck](https://github.com/koalaman/shellcheck) - ShellCheck, a static analysis tool for shell scripts
+- [Shellntel's scripts](https://github.com/Shellntel/scripts) - A collection of scripts from the security professionals at www.shellntel.com.
 
 
 ## Writing effective bash scripts

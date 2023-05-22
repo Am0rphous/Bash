@@ -1,6 +1,7 @@
 # S c r i p t i n g
 
-- [Shell Scripting for Beginners – How to Write Bash Scripts in Linux](https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/)
+- [Lenny Face](https://www.lennyfacecopypaste.com/) - Useful symbols and icons you can use in your scripts.
+
 
 - _"A script should be run without errors"_
 - _"It should perform the task for which it is intended"_

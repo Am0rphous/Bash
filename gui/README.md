@@ -1,5 +1,7 @@
 ## GUI
 
+
+- [Nimx](https://github.com/yglukhov/nimx) - GUI library.
 - [whiptail](https://www.tutorialspoint.com/unix_commands/whiptail.htm) - Display dialog boxes from shell scripts.
 - [xdialog](https://linux.die.net/man/1/xdialog)
 - [yad](https://www.systutorials.com/docs/linux/man/1-yad/)
