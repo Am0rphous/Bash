@@ -23,13 +23,6 @@ sudo systemctl enable /untraditional/path/to/service/EXAMPLE.service
 sudo systemctl restart EXAMPLE
 sudo systemctl status EXAMPLE
 ````
-#### Other service related commands
-````
-sudo systemctl mask EXAMPLE                       # more than disable. Prevents services and users to start, as the config is sent to /dev/null
-sudo systemctl list-units --type=service --all    # list all services
-sudo systemctl cat ssh                            # cat service info
-sudo systemctl list-dependencies cron             # list dependencies
-sudo systemctl list-dependencies cron --reverse   # list dependencies recursively
-sudo systemctl edit ssh --full                    # edits the service
-````
+- [Other service related commands](https://github.com/Am0rphous/CheatSheets/tree/main/Linux/Services)
+
 
