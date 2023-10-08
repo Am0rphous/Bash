@@ -1,5 +1,6 @@
 # S c r i p t i n g
 
+- [ Bash Basics ](https://linuxhandbook.com/tag/bash-beginner/) - This Bash Beginner Series teaches you the basics of Bash shell script in carefully created chapters. All the chapters include scripting examples and exercise that will help you in understanding the concept.
 - [Lenny Face](https://www.lennyfacecopypaste.com/) - Useful symbols and icons you can use in your scripts.
 
 
