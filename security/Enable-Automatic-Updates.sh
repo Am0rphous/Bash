@@ -33,7 +33,7 @@ Unattended-Upgrade::Allowed-Origins {
        //"${distro_id}:${distro_codename}-backports";
        
         //everything
-        "origin=*";
+        // "origin=*"; #fuckes up some time so i comment it out
 };
 
 Unattended-Upgrade::Package-Blacklist {
