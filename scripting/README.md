@@ -4,11 +4,11 @@
 - [Lenny Face](https://www.lennyfacecopypaste.com/) - Useful symbols and icons you can use in your scripts.
 
 
-1. _"A script should be run without errors"_
-2. _"It should perform the task for which it is intended"_
-3. _"Program logic is clearly defined and apparent"_
-4. _"A script does not do unnecessary work"_
-5. _"Scripts should be reusable"_
+1. _A script should be run without errors_
+2. _It should perform the task for which it is intended_
+3. _Program logic is clearly defined and apparent_
+4. _A script does not do unnecessary work_
+5. _Scripts should be reusable_
 
 ## Waiting for user input
 ````powershell
