@@ -20,8 +20,39 @@ read -p "Press [ENTER] when finished..."
 ````
 
 ## Redirecting output
-````powershell
-sudo apt update > /dev/null 2>&1 
-
+````shell
+sudo apt update > /dev/null 2>&1            #redirects output to null (displays nothing at all)
+ls non_existent_file > output.txt 2>&2      #output to file and error to terminal
 ````
 
+## Loops
+- [Source 1 - How To Unix For Loop 1 to 100 Numbers](https://www.cyberciti.biz/faq/unix-for-loop-1-to-10)
+- [Source 2 - Loops! ](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php)
+The purpose of loops is to take a series of commands and re-run them with minimal code. Often used in automation and repetitive tasks. Syntax:
+````powershell
+while [ <something> ]
+do
+  <command>
+done
+````
+Example
+````powershell
+#!/bin/bash
+counter=1
+while [ $counter -le 10 ]      #lt=less than. -le=less than or equal (will print up until nine)
+do
+  echo $counter
+  ((counter++))
+done
+echo "done!"
+````
+
+A For loop in bash:
+````powershell
+#!/bin/bash
+for ((i=1;i<=10;i++)); 
+do 
+   #Doing lots of stuff here
+   echo $i
+done
+````
