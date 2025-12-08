@@ -53,12 +53,17 @@ done
 echo "done!"
 ````
 
-A For loop in bash:
+For loop in bash:
 ````shell
-#!/bin/bash
+#Alternative 1
+for i in $seq 1 10)
+do
+ echo "i is $i"
+doen
+
+#Alternative 2
 for ((i=1;i<=10;i++)); 
 do 
-   #Doing lots of stuff here
-   echo $i
+ echo $i
 done
 ````
