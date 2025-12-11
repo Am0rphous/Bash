@@ -50,22 +50,22 @@ The purpose of loops is to take a series of commands and re-run them with minima
   echo "done!"
   ````
 
-#### For loop (for each)
-  ````shell
-  #Alternative 1
-  for i in $seq 1 10)
-  do
-   echo "i is $i"
-  doen
+  #### For loop (for each)
+    ````shell
+    #Alternative 1
+    for i in $seq 1 10)
+    do
+     echo "i is $i"
+    doen
+    
+    #Alternative 2
+    for ((i=1;i<=10;i++)); 
+    do 
+     echo $i
+    done
   
-  #Alternative 2
-  for ((i=1;i<=10;i++)); 
-  do 
-   echo $i
-  done
-
-  # Add text to every file in a folder
-  for f in *.pdf; do
-    mv -- "$f" "${f%.pdf}-NoStarchPressBought.pdf"
-  done
-  ````
+    # Add text to every file in a folder
+    for f in *.pdf; do
+      mv -- "$f" "${f%.pdf}-NoStarchPressBought.pdf"
+    done
+    ````
