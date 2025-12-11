@@ -29,41 +29,43 @@ ls non_existent_file > output.txt 2>&2      #output to file and error to termina
 - [Source 1 - How To Unix For Loop 1 to 100 Numbers](https://www.cyberciti.biz/faq/unix-for-loop-1-to-10)
 - [Source 2 - Loops! ](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php)
 The purpose of loops is to take a series of commands and re-run them with minimal code. Often used in automation and repetitive tasks. Syntax:
-````shell
-while [ <something> ]
-do
-  <command>
-done
+  ````shell
+  while [ <something> ]
+  do
+    <command>
+  done
+  
+  number=0
+  while true; do
+    echo "$number"
+    ((number++))
+  done
+  
+  counter=1
+  while [ $counter -le 10 ]      #lt=less than. -le=less than or equal (will print up until nine)
+  do
+    echo $counter
+    ((counter++))
+  done
+  echo "done!"
+  ````
 
-number=0
-while true; do
-  echo "$number"
-  ((number++))
-done
-````
-Example
-````shell
-#!/bin/bash
-counter=1
-while [ $counter -le 10 ]      #lt=less than. -le=less than or equal (will print up until nine)
-do
-  echo $counter
-  ((counter++))
-done
-echo "done!"
-````
+#### For loop (for each)
+  ````shell
+  #Alternative 1
+  for i in $seq 1 10)
+  do
+   echo "i is $i"
+  doen
+  
+  #Alternative 2
+  for ((i=1;i<=10;i++)); 
+  do 
+   echo $i
+  done
 
-For loop in bash:
-````shell
-#Alternative 1
-for i in $seq 1 10)
-do
- echo "i is $i"
-doen
-
-#Alternative 2
-for ((i=1;i<=10;i++)); 
-do 
- echo $i
-done
-````
+  # Add text to every file in a folder
+  for f in *.pdf; do
+    mv -- "$f" "${f%.pdf}-NoStarchPressBought.pdf"
+  done
+  ````
