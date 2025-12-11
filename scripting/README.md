@@ -66,6 +66,6 @@ The purpose of loops is to take a series of commands and re-run them with minima
   
     # Add text to every file in a folder
     for f in *.pdf; do
-      mv -- "$f" "${f%.pdf}-NoStarchPressBought.pdf"
+      mv -- "$f" "${f%.pdf}-Bought-NoStarchPress.pdf"
     done
     ````
