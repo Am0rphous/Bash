@@ -13,6 +13,17 @@
 
 <br>
 
+
+## Check if command was ran successfully
+````shell
+some_command
+if [ $? -eq 0 ]; then
+    echo OK
+else
+    echo FAIL
+fi
+````
+
 ## Waiting for user input
 ````shell
 read -p "Write the path: " variableName
