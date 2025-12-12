@@ -17,3 +17,18 @@
       echo "\n ${RedColor}Woops, det gikk ikke!\n"
   fi
   ````
+- Route browser traffic through SSH (poor man's VPN)
+  ````shell
+  #!/bin/bash
+  proxyPort="8254"
+  brukernavn="tom"
+  ipAdresse="192.168.1.10"
+  GreenColor="\033[0;32m"
+  RedColor="\033[0;31m" 
+  ssh -D $proxyPort -f -C -q -N -p 99 tom@$ipAdresse
+  if [ $? -eq 0 ]; then
+      echo "\n ${GreenColor}Suksess! Opprettet SSH-tunnel til IP $ipAdresse \n"
+  else
+      echo "\n ${RedColor}Woops, det gikk ikke!\n"
+  fi
+  ````
