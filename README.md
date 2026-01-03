@@ -1,6 +1,6 @@
 # Bash (work in progress)
 
-
+- [https://guide.bash.academy](https://guide.bash.academy) [source](https://github.com/lhunath/guide.bash.academy)
 - [Bash-guide](https://github.com/Idnan/bash-guide) - A guide to learn bash.
 - [bash-it](https://github.com/Bash-it/bash-it) - A community Bash framework.
 - [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner) - A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.
