@@ -1,5 +1,8 @@
 # Bash (work in progress)
 
+
+https://www.reddit.com/r/bash/s/4DTpl5YYAX
+
 - [https://guide.bash.academy](https://guide.bash.academy) [source](https://github.com/lhunath/guide.bash.academy)
 - [Bash-guide](https://github.com/Idnan/bash-guide) - A guide to learn bash.
 - [bash-it](https://github.com/Bash-it/bash-it) - A community Bash framework.
