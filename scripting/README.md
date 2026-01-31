@@ -22,6 +22,9 @@ if [ $? -eq 0 ]; then
 else
     echo FAIL
 fi
+
+ls        && echo "Success" || echo "Didnt work"    # Output: Success
+ls /root/ && echo "Success" || echo "Didnt work"    # Output: Didnt work
 ````
 
 ## Waiting for user input
