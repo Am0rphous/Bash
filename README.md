@@ -3,6 +3,8 @@
 
 https://www.reddit.com/r/bash/s/4DTpl5YYAX
 
+https://www.reddit.com/r/bash/s/iLHApcqzkl
+
 - https://www.debian.org/doc/user-manuals#debian-handbook
 - [https://guide.bash.academy](https://guide.bash.academy)
 - https://www.linuxcommand.org/tlcl.php
