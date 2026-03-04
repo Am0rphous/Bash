@@ -1,6 +1,9 @@
 # Bash (work in progress)
 
 
+
+https://www.reddit.com/r/bash/s/Cssq5QWQxL
+
 https://www.reddit.com/r/bash/s/4DTpl5YYAX
 
 https://www.reddit.com/r/bash/s/iLHApcqzkl
