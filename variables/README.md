@@ -34,3 +34,13 @@ else
       echo "\$var is NOT empty"
 fi
 ````
+
+### source a file
+To "source" a file means running a file in the current shell environment. That means the variables defined can be used.
+```shell
+(. /etc/os-release && echo "$VERSION_CODENAME")   # example from debian
+#1. source the file "/etc/os-release". A dot "." equals source in POSIX shells
+#2. if sourcing was successfull (exit-status 0)) then "echo" the variable called "$VERSION_CODENAME" from the file
+
+
+```
