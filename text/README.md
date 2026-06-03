@@ -15,3 +15,11 @@
   
   printf ‘\xE2\x98\xA0’ #Add '\x' before each character
   ````
+#### Merge files
+```shell
+# Merge every .txt file into a bigger text file. Perfect when merging wordlists
+find . -type f -name '*.txt' -print0 | xargs -0 cat > Merged-Everything.txt2   # txt2 excludes the file
+
+wc Merged-Everything.txt2  # is the expected line count reasonable long or are we missing something?
+
+```
