@@ -2,7 +2,6 @@
 
 
 
-https://www.reddit.com/r/bash/s/Cssq5QWQxL
 
 https://www.reddit.com/r/bash/s/4DTpl5YYAX
 
@@ -27,6 +26,8 @@ https://www.reddit.com/r/bash/s/iLHApcqzkl
 - [shellcheck](https://github.com/koalaman/shellcheck) - ShellCheck, a static analysis tool for shell scripts
 - [Shellntel's scripts](https://github.com/Shellntel/scripts) - A collection of scripts from the security professionals at www.shellntel.com.
 
+## Learn Bash
+- https://8gwifi.org/tutorials/bash/
 
 ## Writing effective bash scripts
 - A script should be run without errors
