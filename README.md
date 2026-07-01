@@ -1,7 +1,7 @@
 # Bash (work in progress)
 
 
-
+- https://www.reddit.com/r/linux4noobs/s/070fMXndgm
 - https://www.reddit.com/r/bash/s/Um9ZxJwZxT
 https://www.reddit.com/r/bash/s/4DTpl5YYAX
 
