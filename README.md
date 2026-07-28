@@ -1,6 +1,8 @@
 # Bash (work in progress)
 
 
+https://web.archive.org/web/20180917174959/http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming
+
 - https://www.reddit.com/r/linux4noobs/s/070fMXndgm
 - https://www.reddit.com/r/bash/s/Um9ZxJwZxT
 https://www.reddit.com/r/bash/s/4DTpl5YYAX
