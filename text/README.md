@@ -1,6 +1,6 @@
 # Text
 
-- Remove everyhting after '@' by running `echo "username@mail.com" | awk -F "@" '{print $1}'`
+
 - Generate log in banner with [figlet](https://www.figlet.org/)
   ````shell
   sudo apt install figlet
@@ -15,11 +15,28 @@
   
   printf ‘\xE2\x98\xA0’ #Add '\x' before each character
   ````
-#### Merge files
+  
+##### Remove lines/characters/text
+Remove empty lines in text file
 ```shell
-# Merge every .txt file into a bigger text file. Perfect when merging wordlists
+sed -i '/^$/d' fil.txt    # sed = stream editor
+i   edit original file
+^   start of line
+$   end of line
+^$  no characters / empty
+d   delete/remove
+
+sed '/^$/d' fil.txt > newfil.txt   # removes empty lines and saves output to new file
+```
+Remove everything after character `@` with
+  ```shell
+  echo "username@mail.com" | awk -F "@" '{print $1}'
+  ```
+
+#### Merge files
+Merge every .txt file into a bigger text file. Perfect when merging wordlists
+```shell
 find . -type f -name '*.txt' -print0 | xargs -0 cat > Merged-Everything.txt2   # txt2 excludes the file
 
 wc Merged-Everything.txt2  # is the expected line count reasonable long or are we missing something?
-
 ```
