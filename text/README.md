@@ -32,6 +32,12 @@ Remove everything after character `@` with
   ```shell
   echo "username@mail.com" | awk -F "@" '{print $1}'
   ```
+Remove everything before 'conversations' in the link, and everything after '/active'
+```shell
+# https://domain.com/api/v1/conversations/fb797e23-1f12-4d0a-b8a2-8a349b917270/active
+# Result: 'fb797e23-1f12-4d0a-b8a2-8a349b917270' is left
+sed -E 's#.*conversations/##; s#/active##' links.txt > cleaned_links.txt
+``` 
 
 #### Sort and count identical lines (statistics)
 ```shell
