@@ -31,16 +31,26 @@ ls /root/ && echo "Success" || echo "Didnt work"    # Output: Didnt work
 ````
 
 ## Waiting for user input
-````shell
-read -p "Write the path: " variableName
-read -p "Press [ENTER] when finished..."
-````
+    ```shell
+    read -p "Write the path: " variableName
+    read -p "Press [ENTER] when finished..."
+    ```
 
 ## Redirecting output
-````shell
-sudo apt update > /dev/null 2>&1            #redirects output to null (displays nothing at all)
-ls non_existent_file > output.txt 2>&2      #output to file and error to terminal
-````
+    ```shell
+    # 1 = standard output - regular text
+    # 2 = standard error - error messages
+    # 2>&1 = send error messages (2) to the same place as regular output (1)
+    # 1>&2 = send regular output (1) to the same place as error messages (2)
+    
+    ls BLABLA     > log 1>&2    # Error is shown in terminal; log is empty
+    ls BLABLA     > log 2>&1    # Error is saved to log
+    ls exist.txt  > log 1>&2    # Output is shown in terminal; log is empty
+    ls no-exist   > log 2>&1    # Error is saved to log
+    
+    apt update > /dev/null 2>&1                 # redirects output to null (displays nothing at all)
+    ls non_existent_file > output.txt 2>&2      # output to file and error to terminal
+    ```
 
 ## Loops
 - [Source 1 - How To Unix For Loop 1 to 100 Numbers](https://www.cyberciti.biz/faq/unix-for-loop-1-to-10)
